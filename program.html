@@ -1,0 +1,663 @@
+<!-- BEGIN LOADED_SRC src/synt2021/top.src.html -->
+<!--
+    SYNT 2019 - Seventh Workshop on Synthesis
+    Design: Synchronous by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>SYNT 2024</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='css/lato.css' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			
+			<!-- Header -->
+			<div id="header">
+				<div class="container"> 
+					
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">SYNT 2024</a></h1>
+						<span>13th Workshop on Synthesis</span>
+						
+					</div>
+					
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<!-- <li class="active"><a href="index.html">Home</a></li> -->
+							<li id="navIndex"><a href="index.html">Home</a></li>
+							<li id="navProgram"><a href="program.html">Program</a></li>
+	            <li id="navCfp"><a href="cfp.html">CFP</a></li>
+							<li id="navCommittees"><a href="committees.html">Committees</a></li>
+							<!--<li><a href="invited.html">Invited Talks</a></li>-->
+							<li id="navCompetitions"><a href="competitions.html">Competitions</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /Header -->
+
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<section id="sidebar1">  
+								<header>
+									<h3>Dates</h3> 
+								</header>
+                  <ul class="style3">
+									 <li class="first">
+										<!--<p>1st Call for Papers:</br> March 18, 2021</p> -->
+                    <p>Abstract Submission:</br> May 18, 2024</p>
+                    <p>Author Notification:</br>June 10, 2024</p>
+                    <!--<p>Camera-ready Version:</br> May 25, 2019</p> -->
+                    <p>Workshop:</br> July, 2024</p>        
+                  </li>
+                  </ul>
+								<header>
+									<h3>Archive</h3>
+								</header>
+								<ul class="style3">
+                  <li class="first">
+                    <p class="date"><a href="https://cgi.csc.liv.ac.uk/~sven/synt/">Past SYNT</a></p>
+								  </li>
+								</ul>
+							</section>
+						</div>
+<!-- END LOADED_SRC src/synt2021/top.src.html -->
+
+<!-- Ravi: HACK... -->
+<script type="text/javascript">
+document.getElementById("navProgram").classList.add("active")
+</script>
+						
+						<div class="9u skel-cell-important">
+							<section id="content" >                      
+<header>
+  <h3>Program</h3>
+
+</header>
+
+
+<table border="0" class="program">
+
+<!--
+  <tr class="break">
+    <td class="time" style="text-align: center;">PT (UTC-7)</td>
+    <td></td>
+  </tr>
+
+
+  <tr class="session">
+    <th class="header" colspan="2">&lt;SYNT 2024&gt;</th>
+    <th></th>
+  </tr>
+
+
+  <tr class="talk">
+    <td class="time">8:00-8:05</td>
+    <td class="info">
+      Welcome 
+      <br>
+    </td>
+  </tr>
+
+  <tr class="session">
+    <th class="header" colspan="2">Session 1</th>
+    <th></th>
+  </tr>
+
+
+  <tr class="talk">
+    <td class="time"></td>
+    <td class="info"><span style="float: right;">Session Chair: Dave Parker&nbsp;&nbsp;</span></td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">08:05-09:05</td>
+    <td class="info">
+      <strong>Keynote: Enabling Provable Security at Scale</strong><br/>
+      Neha Rungta (Amazon Web Services)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+          The cloud model can be viewed as a contract between customers and
+          providers: customers program against the cloud model, and the cloud
+          provider faithfully implements the model.  In this talk, we focus on
+          the problem of access control. Many users are moving sensitive
+          workloads to the cloud and require that their access control
+          policies comply with their governance requirements and security best
+          practices.  In this talk, I will present an overview of Zelkova, an
+          SMT-based analysis engine, for verification of Amazon Web Services
+          (AWS) access control policies that govern permissions across entire
+          applications in the cloud. It uses traditional formal verification
+          techniques such as language transformation and off-the-shelf SMT
+          solvers. zelkova can be queried to explore the properties of
+          policies e.g. whether some resource is &quot;publicly&quot; accessible, and is leveraged in features such as Amazon S3 Block Public Access, AWS Config Managed Rules, and Amazon Macie. Our experience shows that to leverage formal policy analysis users must have sufficient technical sophistication to realize the criteria important to them and be able to formalize the properties of interest as zelkova queries. In 2019, we launched a publicly available service IAM Access Analyzer that leverages Zelkova to automatically identify resources such as S3 buckets and IAM roles that are shared with an external entity. We help users understand whether their policy is correct, by abstracting the policy into a compact set of positive and declarative statements that precisely summarize who has access to a resource. Users can review the summary to decide whether the policy grants access according to their intentions.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/vk0v0-sgVl4';">Video
+      </button> 
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">09:05-09:25</td>
+    <td class="info">
+      <span style="font-weight: bold;">DeepSynth: Automata Synthesis for Automatic Task Segmentation in Deep Reinforcement Learning</span><br/>
+      Mohammadhosein Hasanbeig, Natasha Jeppu, Alessandro Abate, Tom Melham and Daniel Kroening<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+This paper proposes DeepSynth, a method for effective training of deep Reinforcement Learning (RL) agents when the reward is sparse and non-Markovian, but at the same time progress towards the reward requires achieving an unknown sequence of high-level objectives. Our method employs a novel algorithm for synthesis of compact automata to uncover this sequential structure automatically. We synthesise a human-interpretable automaton from trace data collected by exploring the environment. The state space of the environment is then enriched with the synthesised automaton so that the generation of a control policy by deep RL is guided by the discovered structure encoded in the automaton. The proposed approach is able to cope with both high-dimensional, low-level features and unknown sparse non-Markovian rewards. We have evaluated DeepSynth's performance in a set of experiments that includes the Atari game Montezuma's Revenge. Compared to existing approaches, we obtain a reduction of two orders of magnitude in the number of iterations required for policy synthesis, and also a significant improvement in scalability.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://arxiv.org/pdf/1911.10244.pdf ';">Paper
+      </button>
+       <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/HUPijcxpiEI';">Video
+      </button> 
+    </td>
+  </tr>
+  
+  <tr class="talk">
+    <td class="time">09:25-09:45</td>
+    <td class="info">
+      <span style="font-weight: bold;">Automatic Synthesis of Experiment Designs from Probabilistic Environment Specifications</span><br/>
+      Craig Innes, Yordan Hristov, Georg Kamaras, Subramanian Ramamoorthy<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+This paper presents an extension to the probabilistic programming language ProbRobScene, allowing users to automatically synthesize uniform experiment designs directly from environment specifications. We demonstrate its effectiveness on a number of environment specification snippets from tabletop manipulation, and show that our method generates reliably low-discrepancy designs.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://arxiv.org/abs/2007.06760';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/UK2Z8xnq8r8';">Video
+      </button> 
+    </td>
+  </tr>
+  
+  <tr class="talk">
+    <td class="time">09:45-10:00</td>
+    <td class="info">Break<br/>&nbsp;</td>
+  </tr>
+
+  <tr class="session">
+    <th class="header" colspan="2">Session 2</th>
+    <th></th>
+  </tr>
+  
+  <tr class="talk">
+    <td class="time"></td>
+    <td class="info"><span style="float: right;">Session Chair: Suguman Bansal &nbsp;&nbsp;</span></td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">10:00-10:40</td>
+    <td class="info">
+      <span style="font-weight: bold;">Invited talk: Gamed-Based Predictive Runtime Monitoring</span><br/>
+      Sriram Sankaranarayanan (Colorado)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+In this talk, we will present some recent results on predictive
+runtime monitoring approaches for cyber-physical systems using games.
+Runtime monitors check whether a system under deployment adheres to
+key temporal logic specifications. In the context of "autonomous" cyber-physical
+systems these include safety properties such as maintaining a minimum
+separation (collision avoidance), maintaining velocities within some
+safe bounds,
+or remaining inside a specific geographic region (geofencing). However,
+runtime monitoring of safety properties often requires predicting
+whether a safety property will be violated in a sufficiently long
+future time horizon
+to mitigate against the risk of an  impending violation.
+
+In the talk, we will describe viability monitoring that checks whether
+the controller
+has a strategy to maintain a given safety property over a given future
+time horizon. Such a monitor
+naturally leads to a stochastic safety game played between the
+controller and an unknown stochastic
+environment. We present a fast approach to viability monitoring for
+the special case of linear stochastic
+systems. We will also discuss the potential advantages and
+disadvantages of viability monitoring.
+Moving beyond simple linear systems, we present some ongoing work on
+viability monitoring for
+cyber-physical systems with human operators that involve added
+complexities such as
+nonlinear vehicle models and  complex safety properties.
+          </p></small>
+      </div>
+    </td>
+  </tr>
+
+        <tr class="talk">
+    <td class="time">10:40-10:55</td>
+    <td class="info">
+      <span style="font-weight: bold;">SYNTCOMP results</span><br/>
+      Guillermo A. P&eacute;rez<br/>
+<!--       <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We study the problem of learning control policies for complex tasks given by logical specifications
+Typically, these approaches automatically generate a reward function from a given specification and use a suitable reinforcement learning algorithm to learn a policy that maximizes the expected reward. These approaches, however, scale poorly to complex tasks that require high-level planning.
+In this work, we develop a compositional learning approach, called \dirl, that leverages the specification to decompose the task into a high-level planning problem and a set of simpler reinforcement learning tasks.
+An evaluation of \dirl on a challenging control benchmark with continuous state and action spaces demonstrates that it outperforms state-of-the-art baselines.
+          </p>
+        </small>
+      </div> -->
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">10:55-11:10</td>
+    <td class="info">
+      <span style="font-weight: bold;">Modernising Strix</span><br/>
+      Philipp Meyer and Salomon Sickert<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We describe the architectural changes applied to Strix, a tool for LTL reactive synthesis, that were made in preparation for SYNTCOMP 2021. We replace the specialised translation from linear temporal logic (LTL) to deterministic parity automata (DPW) (as described in [8]) by a simpler and more general translation based on the recent ∆2-normalisation for LTL by [13] and Zielonka split trees. Further, we make use of a new parity game solving algorithm by [14]. These changes simplify overall design, put the tool on a cleaner theoretical foundation, and improve the performance.
+          </p>
+        </small>
+      </div>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">11:10-11:25</td>
+    <td class="info">
+      <span style="font-weight: bold;">Almost-Symbolic Synthesis via Delta-2-Normalisation for Linear Temporal Logic</span><br/>
+      Remco Abraham, Tom van Dijk and Salomon Sickert<br/>
+ <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+The classic approach to synthesis of reactive systems from linear temporal logic (LTL) specifications involves the translation of the specification to a deterministic omega-automaton and computing a winning strategy for the corresponding game with an omega-regular winning condition. Unfortunately, this procedure has an unavoidable double-exponential blow-up in the worst-case and suffers from the state-explosion problem. To address this state-explosion problem in practice we propose an almost-symbolic version of this classic idea that performs the following steps:
+(1) normalisation of the specification into a Boolean combination of simple fragment of LTL,
+(2) translation of each simple subformula into a deterministic automaton,
+(3) encoding of each automaton into a binary decision diagram (BDD),
+(4) construction of a parity automaton (and thus game) by operations on the BDD,
+(5) symbolic computation of a winning strategy, and finally
+(6) extraction of a symbolic controller.
+We prototype this approach in the tool Otus, compare it against Strix, the winner of SYNTCOMP 2018-2020, on the SYNTCOMP benchmarks,
+and identify several specifications where Otus outperforms Strix.
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">11:25-11:40</td>
+    <td class="info">
+      <span style="font-weight: bold;">Acacia-Bonsai: A Modern Implementation of Downset-Based LTL Realizability</span><br/>
+      Michaël Cadilhac and Guillermo Perez<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We describe our implementation of downset-based algorithms used to solve the
+realizability problem for linear temporal logic (LTL). These algorithms were
+introduced by Filiot et al. in the 2010s and implemented in the tools Acacia
+and Acacia+ in C and Python. We identify degrees of freedom in the original
+algorithms and provide a complete rewriting of Acacia in C++20 articulated
+around genericity and leveraging modern techniques for better performances.
+These techniques include compile-time specialization of the algorithms, the
+use of SIMD registers to store vectors, and several preprocessing steps, some
+relying on efficient Binary Decision Diagram (BDD) libraries.
+          </p>
+        </small>
+      </div>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">11:40-11:55</td>
+    <td class="info">
+      <span style="font-weight: bold;">Improvements to LTLsynt</span><br/>
+      Florian Renkin, Philipp Schlehuber-Caissier, Alexandre Duret-Lutz and Adrien Pommellet<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+  We summarize LTLsynt's evolution since 2018.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fhal.archives-ouvertes.fr%2Fhal-03523385%2Ffile%2Frenkin.21.synt.pdf&amp;data=04%7C01%7CGuillermoAlberto.Perez%40uantwerpen.be%7Cd94ca9e213554ed3eaf308d9daa21b96%7C792e08fb2d544a8eaf72202548136ef6%7C0%7C0%7C637781213159219563%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=Mh7N%2BJdtB0sAaq9GDlg8V7zS9tWzrYrN%2F701ZCFxw8U%3D&amp;reserved=0';">Paper
+      </button>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">11:55-12:10</td>
+    <td class="info">Break<br/>&nbsp;</td>
+  </tr>
+
+  <tr class="session">
+    <th class="header" colspan="2">Session 3</th>
+    <th></th>
+  </tr>
+
+  <tr class="talk">
+    <td class="time"></td>
+    <td class="info"><span style="float: right;">Session Chair: Sebastian Junges&nbsp;&nbsp;</span></td>
+  </tr>
+
+<tr class="talk">
+    <td class="time">12:10-12:50</td>
+    <td class="info">
+      <span style="font-weight: bold;">Invited talk: Using Program Synthesis to Build Compilers</span><br/>
+      Alvin Cheung (UC Berkeley)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+Domain-specific languages (DSLs) are prevalent across many application
+domains. Such languages let developers easily express computations using
+high-level abstractions that result in performant implementations. To
+leverage DSLs, however, application developers need to master the DSL’s
+syntax and manually rewrite existing code. Compilers can aid in this
+effort, but building them requires designing and implementing syntax
+transformation rules, which is often a tedious and error-prone process.
+
+In this talk, I will discuss how we view compilation as program
+synthesis: given source code to compile, our goal is to synthesize a
+program written in the target DSL that is the most performant (in terms
+of execution time, etc) and is semantically equivalent to the input. As
+searching for all possible programs in the target language is
+intractable, I will describe verified lifting, where we first "lift" the
+source code into a high-level summary that captures the semantics of the
+input, and subsequently generate executable code in the target language
+from the summary. Much of these two steps is driven by synthesis. I will
+argue that this approach makes compilers much easier to construct and
+maintain, and will illustrate verified lifting using a number of DSL
+compilers we have constructed. This includes Dexter
+(metalift.github.io), which translates C++ image processing codes into
+the Halide DSL, with the translated code now shipping with Adobe Photoshop.
+
+Bio:
+
+Alvin Cheung is an assistant professor in UC Berkeley's EECS Dept. His
+research focuses on designing new techniques to solve programming
+systems problems. Alvin's research has been recognized through multiple
+early career awards such as the US Presidential Early Career Award for
+Scientists and Engineers and the Sloan Fellowship, along with a number
+of best paper and demo awards, most recently with a best paper award at
+CHI 2021.
+          </p></small>
+      </div>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/pNDVfkXgdic';">Video
+      </button> 
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">12:50-13:10</td>
+    <td class="info">
+      <span style="font-weight: bold;">Synthesis of Compact Strategies for Coordination Programs</span><br/>
+      Kedar Namjoshi and Nisarg Patel<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+ A coordination program guides the actions of independent
+agents towards a desired joint behavior. Examples include controllers
+for IoT devices or robot teams, and orchestrators of microservices. Coordination strategies are an attractive target for program synthesis, as
+the desired behavior can be easy to specify but difficult to implement.
+A practically important but often-unstated requirement is that a coordination program should not initiate unnecessary actions, which do
+not contribute to meeting the specification. A strategy that satisfies this
+requirement while meeting the specification is called “compact.” This
+paper introduces and formalizes the notion of compactness, and demon-
+strates that existing methods for program synthesis may produce non-
+compact strategies. The synthesis of compact strategies is carried out
+with a specification transformation which guarantees that the winning
+strategies for the transformed specification are precisely the compact
+strategies for the original. Following this transformation, existing syn-
+thesis methods may be applied to construct compact strategies, as is
+demonstrated with a prototype implementation.
+          </p>
+        </small>
+      </div>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+
+    <tr class="talk">
+    <td class="time">13:10-13:30</td>
+    <td class="info">
+      <span style="font-weight: bold;">Compositional Reinforcement Learning from Logical Specifications</span><br/>
+      Kishor Jothimurugan, Suguman Bansal, Osbert Bastani and Rajeev Alur<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We study the problem of learning control policies for complex tasks given by logical specifications
+Typically, these approaches automatically generate a reward function from a given specification and use a suitable reinforcement learning algorithm to learn a policy that maximizes the expected reward. These approaches, however, scale poorly to complex tasks that require high-level planning.
+In this work, we develop a compositional learning approach, called \dirl, that leverages the specification to decompose the task into a high-level planning problem and a set of simpler reinforcement learning tasks.
+An evaluation of \dirl on a challenging control benchmark with continuous state and action spaces demonstrates that it outperforms state-of-the-art baselines.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://arxiv.org/abs/2106.13906';">Paper
+      </button>
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+
+      <tr class="talk">
+    <td class="time">13:30-13:45</td>
+    <td class="info">
+      <span style="font-weight: bold;">Update on the SyGuS-IF standard</span><br/>
+      Andrew Reynolds<br/>
+<!--       <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We study the problem of learning control policies for complex tasks given by logical specifications
+Typically, these approaches automatically generate a reward function from a given specification and use a suitable reinforcement learning algorithm to learn a policy that maximizes the expected reward. These approaches, however, scale poorly to complex tasks that require high-level planning.
+In this work, we develop a compositional learning approach, called \dirl, that leverages the specification to decompose the task into a high-level planning problem and a set of simpler reinforcement learning tasks.
+An evaluation of \dirl on a challenging control benchmark with continuous state and action spaces demonstrates that it outperforms state-of-the-art baselines.
+          </p>
+        </small>
+      </div> -->
+<!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button> 
+    </td>
+  </tr>
+  <tr class="session">
+    <th class="header" colspan="2">&nbsp;</th>
+    <th></th>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">13:45-13:50</td>
+    <td class="info">
+      Closing
+      <br>
+    </td>
+  </tr>
+
+  <tr class="session">
+    <th class="header" colspan="2">&lt;/SYNT 2021&gt;</th>
+    <th></th>
+  </tr>
+
+</table> 
+
+
+                                                        </section>
+						</div>
+					</div>
+
+				</div>	
+			</div>
+            -->
+
+			<!-- Footer
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<section id="box1">
+								<header>
+									<h2>Nulla facilisi</h2>
+								</header>
+								<ul class="style3">
+									<li class="first">
+										<p class="date"><a href="#">10.03.2012</a></p>
+										<p><a href="#">Vestibulum sem magna, elementum ut, vestibulum facilisis. Nulla facilisi. Cum sociis natoque penatibus.</a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">10.03.2012</a></p>
+										<p><a href="#">Pellentesque erat erat, tincidunt in, eleifend, malesuada bibendum. Suspendisse sit amet  in eros bibendum condimentum. </a> </p>
+									</li>
+								</ul>
+							</section>
+						</div>
+						<div class="6u">
+							<section id="box2">
+								<header>
+									<h2>Donec dictum metus</h2>
+								</header>
+								<div> <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a> </div>
+								<p>Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Duis enim nulla, luctus eu, dapibus lacinia, venenatis id, quam. Vestibulum imperdiet, magna nec eleifend rutrum, nunc lectus vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl.</p>
+							</section>
+						</div>
+						<div class="3u">
+							<section id="box3">
+								<header>
+									<h2>Gravida ipsum</h2>
+								</header>
+								<ul class="style1">
+									<li class="first"><a href="#">Pellentesque quis elit non lectus eleifend purus condimentum.</a></li>
+									<li><a href="#">Lorem ipsum dolort, consectetuer adipiscing dictum metus sapien.</a></li>
+									<li><a href="#">Phasellus nec dictum metus in sapien pellentesque congue.</a></li>
+									<li><a href="#">Cras vitae metus aliquam risus dictum metus in sapien pharetra.</a></li>
+									<li><a href="#">Duis non dictum metus in sapien ante in metus commodo euismod lobortis.</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<div class="container">
+					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://pixabay.com">Pixabay</a>				</div>
+			</div>
+			
+		</div>
+	</body>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</html>
+
