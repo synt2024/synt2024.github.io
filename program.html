@@ -98,6 +98,37 @@ document.getElementById("navProgram").classList.add("active")
 
 
 <table border="0" class="program">
+  <tr class="talk">
+    <td class="info">
+      <strong>Keynote: TBA </strong><br/>
+      <a href="https://polgreen.github.io/">Elizabeth Polgreen</a> (University of Edinburgh)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            TBA
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="info">
+      <strong>Keynote: TBA </strong><br/>
+      <a href="https://astrivedi.github.io/www/index.html">Ashutosh Trivedi</a> (University of Colorado, Boulder)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            TBA
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+</table>
+
 
 <!--
   <tr class="break">
@@ -129,6 +160,38 @@ document.getElementById("navProgram").classList.add("active")
   <tr class="talk">
     <td class="time"></td>
     <td class="info"><span style="float: right;">Session Chair: Dave Parker&nbsp;&nbsp;</span></td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">08:05-09:05</td>
+    <td class="info">
+      <strong>Keynote: Enabling Provable Security at Scale</strong><br/>
+      Neha Rungta (Amazon Web Services)<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+          The cloud model can be viewed as a contract between customers and
+          providers: customers program against the cloud model, and the cloud
+          provider faithfully implements the model.  In this talk, we focus on
+          the problem of access control. Many users are moving sensitive
+          workloads to the cloud and require that their access control
+          policies comply with their governance requirements and security best
+          practices.  In this talk, I will present an overview of Zelkova, an
+          SMT-based analysis engine, for verification of Amazon Web Services
+          (AWS) access control policies that govern permissions across entire
+          applications in the cloud. It uses traditional formal verification
+          techniques such as language transformation and off-the-shelf SMT
+          solvers. zelkova can be queried to explore the properties of
+          policies e.g. whether some resource is &quot;publicly&quot; accessible, and is leveraged in features such as Amazon S3 Block Public Access, AWS Config Managed Rules, and Amazon Macie. Our experience shows that to leverage formal policy analysis users must have sufficient technical sophistication to realize the criteria important to them and be able to formalize the properties of interest as zelkova queries. In 2019, we launched a publicly available service IAM Access Analyzer that leverages Zelkova to automatically identify resources such as S3 buckets and IAM roles that are shared with an external entity. We help users understand whether their policy is correct, by abstracting the policy into a compact set of positive and declarative statements that precisely summarize who has access to a resource. Users can review the summary to decide whether the policy grants access according to their intentions.
+          </p>
+        </small>
+      </div>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/vk0v0-sgVl4';">Video
+      </button> 
+    </td>
   </tr>
 
   <tr class="talk">
