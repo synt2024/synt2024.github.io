@@ -96,84 +96,113 @@ document.getElementById("navProgram").classList.add("active")
 
 </header>
 
+
+<tr class="invited">
+  <td class="time"></td>
+  <td class="info">
+    <div style="float:left; padding-right:20px;">
+      <figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" width="200" height="201" src="https://polgreen.github.io/img/profile.jpg" sizes="(max-width: 400px) 100vw, 400px" /></figure>
+    </div>
+    <p style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.86), 24px);"><a href="https://polgreen.github.io/"><strong>Elizabeth Polgreen</strong></a> University of Edinburgh, UK</p>
+
+    <strong>Keynote: Making the most of large language models for program synthesis (when you want correct answers)</strong><br/>
+    
+    <div class="abstract">
+      <small>
+        <p>
+          <strong>Abstract. </strong>
+          Since the release of ChatGPT, large language models (LLMs) have been dominating the discourse around code generation. In contrast, the best-performing solvers in the world of formal program synthesis are still based around enumerative algorithms. So, are we behind the times? Are LLMs the answer to all our synthesis problems? In this talk, I will present two approaches to making the most of LLMs in formal domains.
+          First, I will present a technique based on combining enumerative program synthesis with guidance from an LLM [1]. Focusing on the Syntax-Guided Synthesis (SyGuS) competition benchmarks, we found that, whilst LLMs can produce syntactically correct SyGuS expressions, they fail to produce semantically correct solutions for more than half of the benchmarks. We propose a novel enumerative synthesis algorithm, which integrates calls to an LLM into a weighted probabilistic search, allowing 2-way exchange of information between the two components, and increasing the number of benchmarks solved to 80% (and outperforming the state-of-the-art solver).
+          Second, I will discuss our work using LLMs to generate models of systems for verification [2]. Here, we enable LLMs to generate syntactically correct code, even in programming languages that barely feature in the training data, by combining an HCI technique called natural program elicitation and a Max-SMT solver. We apply our approach to generating models of systems in the UCLID5 verification language, improving syntactic correctness from <10% to >80% on a set of textbook problems. 
+          Whilst I don’t believe LLMs are the answer to all our synthesis problems, I think our results demonstrate that perhaps techniques used in formal synthesis could be the answer to many of the problems facing LLMs..!
+          <p>[1] Guiding Enumerative Program Synthesis with Large Language Models
+          Yixuan Li, Julian Parsert, Elizabeth Polgreen
+          </p>
+          <p>
+          [2] Synthetic Programming Elicitation and Repair for Text-to-Code in Very Low-Resource Programming Languages - Federico Mora, Justin Wong, Haley Lepe, Sahil Bhatia, Karim Elmaaroufi, George Varghese, Joseph E. Gonzalez, Elizabeth Polgreen, Sanjit A. Seshia       
+         </p>
+        </p>
+      </small>
+    </div>
+    <!-- <button class="collapsible">Bio</button> -->
+    
+    <div class="bio">
+      <small>
+        <p>
+          <strong>Bio. </strong>
+          Dr Elizabeth Polgreen is a lecturer (~Assistant Professor in US terminology) in the School of Informatics at the University of Edinburgh. Prior to this, she was a postdoctoral research scholar in Professor Sanjit Seshia’s group at the University of California, Berkeley, and completed a PhD at the University of Oxford, supervised by Professor Alessandro Abate. 
+          She is interested in formal program synthesis techniques, combinations of formal program synthesis and machine learning driven synthesis, and the use of synthesis to increase the scalability of verification. She currently holds a research fellowship from the Royal Academy of Engineering.        </p>
+      </small>
+    </div>
+    <div style="float:left; padding-right:20px;">
+      <figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" width="200" height="201" src="images/anshutosh.jpg" sizes="(max-width: 400px) 100vw, 400px" /></figure>
+    </div>
+    <p style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.86), 24px);"><a href="https://astrivedi.github.io/www/index.html"><strong>Ashutosh Trivedi</strong></a> University of Colorado, Boulder</p>
+
+    <strong>Keynote: Formal Methods for Reinforcement Learning</strong><br/>
+    
+    
+    <div class="abstract">
+      <small>
+        <p>
+          <strong>Abstract. </strong>
+          Reinforcement Learning (RL) is an optimization-based approach to problem-solving where learning agents rely on scalar reward signals to discover optimal solutions. The recent success of RL has demonstrated its potential as a viable alternative to traditional programming. However, these successes reveal that significant expertise is required to deploy RL effectively. This expertise is necessary for designing a suitable approximation architecture, creating a "flat" representation of the environment as required by the architecture, and specifying objectives in the form of scalar rewards. This rigid interface—comprising feature construction, manual approximations, and reward engineering—between programmers and RL algorithms is cumbersome and error-prone. The resulting lack of usability and trust presents barriers to entry in this promising field. In this talk, Professor Trivedi will summarize some recent efforts to develop formal methods that improve the usability and trustworthiness of RL-based programming at scale.
+        </p>
+      </small>
+    </div>
+    <!-- <button class="collapsible">Bio</button> -->
+    
+    <div class="bio">
+      <small>
+        <p>
+          <strong>Bio. </strong>
+          Ashutosh Trivedi is an Associate Professor of Computer Science at the University of Colorado Boulder, specializing in the development and application of formal methods for the design and analysis of safety-critical learning-enabled systems. He obtained his doctoral degree in computer science from the University of Warwick, with a specialization in game theory and optimization. Prior to his current position, Ashutosh served as an Assistant Professor of Computer Science at the Indian Institute of Technology Bombay. He also worked as a Postdoctoral Research Associate at the University of Pennsylvania and the University of Oxford. Ashutosh is a recipient of the 2022 NSF CAREER award and a Liverpool Fellowship. His research interests lie at the intersection of computer science, control theory, and machine learning, with a focus on formal methods and reinforcement learning.
+        </p>
+      </small>
+    </div>
+  </td>
+</tr>
+
 <strong> We are still looking for more presentations at SYNT'2024! Please contact us if you are interested. </strong> 
 <table border="0" class="program">
-  <tr class="talk">
+  <script type="text/javascript">
+    document.getElementById("navProgram").classList.add("active")
+    </script>
+                
+                <div class="9u skel-cell-important">
+                  <section id="content" >                      
+  <!-- <tr class="break">
+    <td class="time" style="text-align: center;">PT (UTC-7)</td>
+    <td></td>
+  </tr> -->
+
+
+  <!-- <tr class="talk">
+    <td class="time">8:00-8:05</td>
     <td class="info">
-      <strong>Keynote: TBA </strong><br/>
+      Welcome 
+    </td>
+  </tr> -->
+
+  <tr class="talk">
+    <td width="150" class="time">09:00-10:00</td>
+    <td class="info">
+      <strong>Keynote: Making the most of large language models for program synthesis (when you want correct answers) </strong><br/>
       <a href="https://polgreen.github.io/">Elizabeth Polgreen</a> (University of Edinburgh)<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
+      <!-- <button class="collapsible">Abstract</button> -->
+      <!-- <div class="abstract">
         <small>
           <p>
             TBA
           </p>
         </small>
-      </div>
+      </div> -->
     </td>
   </tr>
 
   <tr class="talk">
-    <td class="info">
-      <strong>Keynote: TBA </strong><br/>
-      <a href="https://astrivedi.github.io/www/index.html">Ashutosh Trivedi</a> (University of Colorado, Boulder)<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
-        <small>
-          <p>
-            TBA
-          </p>
-        </small>
-      </div>
-    </td>
-  </tr>
+    <td class="time">10:00-10:30</td>
 
-  <tr class="talk">
-    <td class="info">
-      <strong>Reactive Synthesis Modulo Theories with Data Temporal Relations (Extended Abstract)</strong><br/>
-      <a href=""></a>Andoni Rodriguez, César Sánchez and Felipe Gorostiaga<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
-        <small>
-          <p>
-            TBA
-          </p>
-        </small>
-      </div>
-    </td>
-  </tr>
-
-  <tr class="talk">
-    <td class="info">
-      <strong>Synthesizing Exact Loop Bounds</strong><br/>
-      <a href=""></a>Daniel Riley and Grigory Fedyukovich<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
-        <small>
-          <p>
-            TBA
-          </p>
-        </small>
-      </div>
-    </td>
-  </tr>
-
-  <tr class="talk">
-    <td class="info">
-      <strong>Synthesis of Multi-Threaded Programs</strong><br/>
-      <a href=""></a>Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea and Shuvendu Lahiri<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
-        <small>
-          <p>
-            TBA
-          </p>
-        </small>
-      </div>
-    </td>
-  </tr>
-
-  <tr class="talk">
     <td class="info">
       <strong>Can LLMs Perform Verified Lifting of Code?</strong><br/>
       <a href=""></a>Sahil Bhatia, Jie Qiu, Niranjan Hasabnis, Sanjit Seshia and Alvin Cheung<br/>
@@ -181,13 +210,143 @@ document.getElementById("navProgram").classList.add("active")
       <div class="abstract">
         <small>
           <p>
-            TBA
+            Domain-specific languages (DSLs) have become integral to various software workflows. Such languages offer domain-specific optimizations and abstractions that improve code readability and maintainability. However, leveraging these languages requires developers to rewrite existing code using the specific DSL's API. While large language models (LLMs) have shown some success in automatic code transpilation, none of them provide any functional correctness guarantees on the rewritten code. Another approach for automating this task is verified lifting, which relies on program synthesis to find programs in the target language that are functionally equivalent to the source language program. While several verified lifting tools have been developed for various application domains, they are specialized for specific source-target languages or require significant expertise in domain knowledge to make the search efficient. In this paper, leveraging recent advances in LLMs, we propose an LLM-based approach to building verified lifting tools. We use the LLM's capabilities to reason about programs to translate a given program into its corresponding equivalent in the target language. Additionally, we use LLMs to generate proofs for functional equivalence. We develop lifting-based compilers for three DSLs targeting different application domains. Our approach outperforms previous symbolic-based tools in the number of benchmarks transpiled and also requires significantly less efforts to build.
           </p>
         </small>
       </div>
     </td>
   </tr>
+
   <tr class="talk">
+    <td class="time">10:30 - 11:00</td>
+    <td class="info">
+      <strong>Reactive Synthesis Modulo Theories with Data Temporal Relations (Extended Abstract)</strong><br/>
+      <a href=""></a>Andoni Rodriguez, César Sánchez and Felipe Gorostiaga<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            Recently, the realizability problem of LTL Modulo Theories ($\LTLt$) specifications has been shown to be decidable whenever theories are decidable.
+
+However, such approaches suffer from a key limitation: memory of specifications is restricted.
+They allow to carry finite information of infinite theories.
+For instance, we can remember that "x" was odd in previous timesteps,
+but we cannot remember the concrete value of "x" in previous timesteps.
+
+This limits the ability of abstractions to properly encode richer dynamics in the specifications
+(e.g., it is currently not possible to specify that a variable increases monotonically over time).
+
+In this paper, we extend $\LTLt$ with operators that allow to fetch values of the variables in previous instants ($\LTLtf$).
+We show that realizability in $\LTLtf$ is undecidable in general,
+but we also propose a sound incomplete algorithm that works for expressive $\LTLtf$ formulae in which we can specify realistic environment dynamics.
+
+In addition, we present a novel procedure that abstracts tautologies in $\LTLtf$ to tautologies in $\LTLt$,
+which conveys memory across-time and thus helps pushing conclusiveness of our algorithm.
+
+Moreover, we show that we can encode inductive behaviour such as counters and averages.
+
+To the best of our knowledge, this is the first work that presents sound realizability algorithms that conclude in such expressive specifications.
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">11:00-11:30</td>
+    <td class="info">
+      <strong>Synthesizing Exact Loop Bounds</strong><br/>
+      <a href=""></a>Daniel Riley and Grigory Fedyukovich<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            Many state-of-the-art techniques are designed to automatically
+            infer upper limits on the number of iterations a loop may execute, conventionally
+            called bounds. Analysis of this kind is inspired by techniques to prove
+            termination used in previous works, namely to instrument the program
+            with a decrementing counter and find the conditions by which the counter’s
+            value is above zero at the end of the program. However, in most cases, they do
+            not capture the exact number of iterations which could be useful to estimate
+            the number of cycles/iterations/time a process requires when it is distributed
+            across many devices, relational verification and equivalence checking,
+            and even non-termination. In this extended abstract, we present the ongoing
+            work on synthesis of an exact loop bound for single-loop programs as a function
+            over the program’s inputs.
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+  
+  <tr class="talk">
+    <td class="time">11:30-14:00</td>
+    <td class="info">
+      <strong>Lunch </strong><br/>
+    </td>
+  </tr>
+
+
+  <tr class="talk">
+    <td class="time">14:00-15:00</td>
+    <td class="info">
+      <strong>Keynote: Formal Methods for Reinforcement Learning </strong><br/>
+      <a href="https://astrivedi.github.io/www/index.html">Ashutosh Trivedi</a> (University of Colorado, Boulder)<br/>
+      <!-- <button class="collapsible">Abstract</button> -->
+      <!-- <div class="abstract">
+        <small>
+          <p>
+            TBA
+          </p>
+        </small>
+      </div> -->
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">15:00-15:30</td>
+
+    <td class="info">
+      <strong>ZDD Boolean Synthesis </strong><br/>
+      <a href=""></a>Yi Lin, Lucas M. Tabajara, Moshe Y. Vardi<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            Motivated by applications in boolean-circuit design, boolean
+            synthesis is the process of synthesizing a boolean function with multiple outputs, given a relation between its inputs and outputs. Previous
+            work has attempted to solve boolean functional synthesis by converting a
+            specification formula into a Binary Decision Diagram (BDD) and quantifying existentially the output variables. We make use of the fact that
+            the specification is usually given in the form of a Conjunctive Normal
+            Form (CNF) formula, and we can perform resolution on a symbolic representation of a CNF formula in the form of a Zero-suppressed Binary
+            Decision Diagram (ZDD). We adapt the realizability test to the context
+            of CNF and ZDD, and show that the Cross operation defined in earlier
+            work can be used for witness construction. Experiments show that our
+            approach is complementary to BDD-based Boolean synthesis.
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">15:30-16:00</td>
+    <td class="info">
+      <strong>Synthesis of Multi-Threaded Programs</strong><br/>
+      <a href=""></a>Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea and Shuvendu Lahiri<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+            Asynchronous and concurrent programming are fundamental concepts for building responsive and efficient software systems. To this end, we proposed an approach for refactoring a sequential program into an asynchronous program that uses async/await, called asynchronization, without introducing data races [1]. We showed that the delay complexity of enumerating all data race free asynchronizations, which quantifies the delay between outputting two consecutive data race free asynchronizations, is polynomial time modulo an oracle for solving reachability in sequential programs. In this paper, we show that this approach and the associated results extend to refactoring a sequential program into a data race free multi-threaded program that uses start/join.
+          </p>
+        </small>
+      </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">16:00-16:20</td>
     <td class="info">
       <strong>SYNTCOMP results</strong><br/>
       <a href=""></a>TBA<br/>
@@ -195,77 +354,33 @@ document.getElementById("navProgram").classList.add("active")
       <div class="abstract">
         <small>
           <p>
-            TBA
+            This is the presentation of the SYNTCOMP results.
           </p>
         </small>
       </div>
+    </td>
+  </tr>
+
+  <tr class="talk">
+    <td class="time">16:20-16:35</td>
+    <td class="info">
+      <strong>Closing</strong><br/>
     </td>
   </tr>
 </table>
 
 
-<!--
-  <tr class="break">
-    <td class="time" style="text-align: center;">PT (UTC-7)</td>
-    <td></td>
-  </tr>
 
 
-  <tr class="session">
-    <th class="header" colspan="2">&lt;SYNT 2024&gt;</th>
-    <th></th>
-  </tr>
 
-
-  <tr class="talk">
-    <td class="time">8:00-8:05</td>
-    <td class="info">
-      Welcome 
-      <br>
-    </td>
-  </tr>
-
-  <tr class="session">
+  <!-- <tr class="session">
     <th class="header" colspan="2">Session 1</th>
     <th></th>
   </tr>
 
-
   <tr class="talk">
     <td class="time"></td>
     <td class="info"><span style="float: right;">Session Chair: Dave Parker&nbsp;&nbsp;</span></td>
-  </tr>
-
-  <tr class="talk">
-    <td class="time">08:05-09:05</td>
-    <td class="info">
-      <strong>Keynote: Enabling Provable Security at Scale</strong><br/>
-      Neha Rungta (Amazon Web Services)<br/>
-      <button class="collapsible">Abstract</button>
-      <div class="abstract">
-        <small>
-          <p>
-          The cloud model can be viewed as a contract between customers and
-          providers: customers program against the cloud model, and the cloud
-          provider faithfully implements the model.  In this talk, we focus on
-          the problem of access control. Many users are moving sensitive
-          workloads to the cloud and require that their access control
-          policies comply with their governance requirements and security best
-          practices.  In this talk, I will present an overview of Zelkova, an
-          SMT-based analysis engine, for verification of Amazon Web Services
-          (AWS) access control policies that govern permissions across entire
-          applications in the cloud. It uses traditional formal verification
-          techniques such as language transformation and off-the-shelf SMT
-          solvers. zelkova can be queried to explore the properties of
-          policies e.g. whether some resource is &quot;publicly&quot; accessible, and is leveraged in features such as Amazon S3 Block Public Access, AWS Config Managed Rules, and Amazon Macie. Our experience shows that to leverage formal policy analysis users must have sufficient technical sophistication to realize the criteria important to them and be able to formalize the properties of interest as zelkova queries. In 2019, we launched a publicly available service IAM Access Analyzer that leverages Zelkova to automatically identify resources such as S3 buckets and IAM roles that are shared with an external entity. We help users understand whether their policy is correct, by abstracting the policy into a compact set of positive and declarative statements that precisely summarize who has access to a resource. Users can review the summary to decide whether the policy grants access according to their intentions.
-          </p>
-        </small>
-      </div>
-      <button
-        class="extended"
-        onclick="window.location.href = 'https://youtu.be/vk0v0-sgVl4';">Video
-      </button> 
-    </td>
   </tr>
 
   <tr class="talk">
@@ -317,10 +432,10 @@ This paper proposes DeepSynth, a method for effective training of deep Reinforce
         class="extended"
         onclick="window.location.href = 'https://arxiv.org/pdf/1911.10244.pdf ';">Paper
       </button>
-       <button
+ <!--      <button
         class="extended"
         onclick="window.location.href = 'https://youtu.be/HUPijcxpiEI';">Video
-      </button> 
+      </button>
     </td>
   </tr>
   
@@ -337,7 +452,7 @@ This paper presents an extension to the probabilistic programming language ProbR
           </p>
         </small>
       </div>
-      <button
+<!--       <button
         class="extended"
         onclick="window.location.href = 'https://arxiv.org/abs/2007.06760';">Extended Abstract
       </button>
@@ -428,7 +543,7 @@ An evaluation of \dirl on a challenging control benchmark with continuous state 
       <button
         class="extended"
         onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
-      </button>
+      </button> 
     </td>
   </tr>
 
@@ -446,6 +561,30 @@ We describe the architectural changes applied to Strix, a tool for LTL reactive 
         </small>
       </div>
 <!--       <button
+        class="extended"
+        onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
+      </button>
+      <button
+        class="extended"
+        onclick="window.location.href = 'https://youtu.be/RquAVgC0sEA';">Video
+      </button>
+    </td>
+  </tr> 
+<!--
+  <tr class="talk">
+    <td class="time">10:55-11:10</td>
+    <td class="info">
+      <span style="font-weight: bold;">Modernising Strix</span><br/>
+      Philipp Meyer and Salomon Sickert<br/>
+      <button class="collapsible">Abstract</button>
+      <div class="abstract">
+        <small>
+          <p>
+We describe the architectural changes applied to Strix, a tool for LTL reactive synthesis, that were made in preparation for SYNTCOMP 2021. We replace the specialised translation from linear temporal logic (LTL) to deterministic parity automata (DPW) (as described in [8]) by a simpler and more general translation based on the recent ∆2-normalisation for LTL by [13] and Zielonka split trees. Further, we make use of a new parity game solving algorithm by [14]. These changes simplify overall design, put the tool on a cleaner theoretical foundation, and improve the performance.
+          </p>
+        </small>
+      </div>
+      <button
         class="extended"
         onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
       </button>
@@ -685,7 +824,7 @@ In this work, we develop a compositional learning approach, called \dirl, that l
 An evaluation of \dirl on a challenging control benchmark with continuous state and action spaces demonstrates that it outperforms state-of-the-art baselines.
           </p>
         </small>
-      </div> -->
+      </div> 
 <!--       <button
         class="extended"
         onclick="window.location.href = 'papers/Modular_Synthesis_of_Reactive_Programs.pdf';">Extended Abstract
@@ -771,7 +910,7 @@ An evaluation of \dirl on a challenging control benchmark with continuous state 
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 
 			<!-- Copyright -->
 			<div id="copyright">
